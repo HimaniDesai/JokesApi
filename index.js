@@ -26,7 +26,7 @@ const path=require("path");
         return res.json({
           speech: w,
           displayText: w,
-          source: "joke"
+          source: ""
         }); 
   });
 
@@ -48,6 +48,7 @@ request(url, function (err, response, body) {
     console.log(message);
     result=message;
   }
+  return result;
 
 });
 	while(result == undefined){
